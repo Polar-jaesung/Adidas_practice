@@ -23,11 +23,13 @@ container.addEventListener("mouseenter",(e) => {
     card.style.transition ="none";
     
     // POP OUT
-    title.style.transform="translateX(-30px) translateY(-30px) scale(1.3)";
-    sneaker.style.transform="translateX(-50px) translateY(-50px) rotateZ(-45deg) scale(1.5)";
-    description.style.transform="translateX(-30px) translateY(-30px) scale(1.3)";
-    sizes.style.transform="translateX(-30px) translateY(-30px) scale(1.3)";
-    purchase.style.transform="translateX(-30px) translateY(-30px) scale(1.3)";
+    title.style.transform="translateZ(100px)";
+    sneaker.style.transform="translateZ(150px) rotate(-45deg)";
+    purchase.style.transform="translateZ(80px)";
+    description.style.transform="translateZ(50px)";
+    sizes.style.transform="translateZ(70px)";
+
+
    
     
 })
@@ -38,11 +40,13 @@ container.addEventListener("mouseleave",(e) => {
     card.style.transform= "translateX(0px) translateY(0px)";
 
     // POP BACK
-    title.style.transform="translateX(0px) translateY(0px) scale(1)";
-    sneaker.style.transform="translateX(0px) translateY(0px) rotateZ(0deg) scale(1)";
-    description.style.transform="translateX(0px) translateY(0px) scale(1)";
-    sizes.style.transform="translateX(0px) translateY(0px) scale(1)";
-    purchase.style.transform="translateX(0px) translateY(0px) scale(1)";
-    
+    title.style.transform="translateZ(0px)";
+    sneaker.style.transform="translateZ(0px) rotate(0deg)";
+    purchase.style.transform="translateZ(0px)";
+    description.style.transform="translateZ(0px)";
+    sizes.style.transform="translateZ(0px)";
+
+
+ 
   
 });

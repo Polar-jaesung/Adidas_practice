@@ -24,6 +24,7 @@ body{
 }
 
 .card{
+    /* 3D효과 */
     transform-style: preserve-3d;
     min-height: 80vh;
     width: 35rem;   
@@ -39,14 +40,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.75s ease-out;    
+    transition: all 0.75s ease-out; 
+    /* 3D효과 */   
+    transform-style: preserve-3d;
 }
 
 .sneaker img{
     
     width: 20rem;        
     z-index: 2;
-    transition: all 0.75s ease-out;   
+    transition: all 0.75s ease-out;       
 }
 
 
@@ -64,11 +67,17 @@ body{
     border-radius:50%; 
     z-index: 1;
 }
+.info{
+     /* 3D효과 */  
+    transform-style: preserve-3d;
+}
 
 .info h1{
     transform-style: preserve-3d;
     font-size: 2rem;
     transition: all 0.75s ease-out;
+    text-shadow: 5px 5px 10px rgb(94, 86, 86);
+    
 
 }
 
